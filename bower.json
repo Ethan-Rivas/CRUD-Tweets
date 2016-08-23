@@ -1,0 +1,25 @@
+{
+  "name": "crud-tweets",
+  "homepage": "https://github.com/Ethan-Rivas/CRUD-Tweets",
+  "authors": [
+    "Ethan-Rivas <ethan-rivas@hotmail.com>"
+  ],
+  "description": "Sample app",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.2",
+      "bootstrap-css-only": "^3.3.6",
+      "font-awesome": "^4.5.0",
+      "angular-route-segment": "^1.5.1",
+      "angular-route": "^1.5.2"
+    }
+}
