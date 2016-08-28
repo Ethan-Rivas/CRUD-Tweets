@@ -1,5 +1,5 @@
-var tweets = angular.module('tweets', []);
+var tweets = angular.module('tweets', ['cjForm', 'api']);
 
 tweets.controller('TestController', function($scope) {
-  $scope.message = "Short test message.";
+  $scope.message = "Tweets App."; // App Name
 });

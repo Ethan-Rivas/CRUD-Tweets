@@ -16,3 +16,103 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+  background-color: rgb(176, 231, 238);
+}
+
+.container-tweets {
+  width: 564px;
+  min-height: 100vh;
+  text-align: center;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 40px 10px 40px;
+}
+
+.labels {
+  text-align: left;
+}
+
+.btn-green {
+  margin-top: 10px;
+  font-size: 110%;
+  padding-top: 10px;
+  color: rgb(255, 255, 255);
+  height: 40px;
+  background-color: rgb(71, 207, 224);
+  width: 100%;
+}
+
+.btn-green:hover {
+  margin-top: 10px;
+  font-size: 110%;
+  padding-top: 10px;
+  color: rgb(255, 255, 255);
+  height: 40px;
+  background-color: rgb(61, 193, 209);
+  width: 100%;
+}
+
+.btn-green:active {
+  margin-top: 10px;
+  font-size: 110%;
+  padding-top: 10px;
+  color: rgb(255, 255, 255);
+  height: 40px;
+  background-color: rgb(61, 193, 209);
+  width: 100%;
+}
+
+.divisor {
+  color: rgb(255, 255, 255);
+}
+
+.tweet {
+  margin-top: 10px;
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  min-height: 80px;
+  border-radius: 5px;
+}
+
+.tweet-name {
+  font-weight: bold;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.tweet-date {
+  padding-top: 10px;
+  text-align: right;
+}
+
+.tweet-delete {
+  padding-top: 5px;
+}
+
+.tweet-delete-button {
+  font-size: 12px;
+  cursor: pointer;
+  color: rgb(71, 207, 224);
+}
+
+.tweet-delete-button:hover {
+  font-size: 12px;
+  cursor: pointer;
+  color: rgb(61, 193, 209);
+}
+
+.tweet-delete-button:active {
+  font-size: 12px;
+  cursor: pointer;
+  color: rgb(61, 193, 209);
+}
+
+.tweet-body {
+  float: none;
+  min-height: 40px;
+  text-align: left;
+  padding-bottom: 5px;
+}
