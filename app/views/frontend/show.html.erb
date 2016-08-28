@@ -1,3 +1,46 @@
-<div ng-controller="TestController">
-  <h2>{{message}}</h2>
+<div class="container-tweets" ng-controller="NewTweetsController">
+
+  <div ng-controller="TestController">
+    <h2>{{message}}</h2>
+  </div>
+
+  <div class="tweet-container">
+
+    <cj-form class="row" path="/api/v1/tweets" success="redirect"
+      ng-model="tweet" wrapper="tweet" errors="errors"
+      cj-form-field-template="/assets/angular-app/forms/field.tpl.html">
+
+      <cj-form-field class="labels" attribute="name" label="User"></cj-form-field>
+
+      <cj-form-field class="labels" attribute="description" template="/assets/angular-app/forms/textarea.tpl.html"
+        label="Tweet Message">
+      </cj-form-field>
+
+      <input type="submit" class="btn btn-green" value="Send Tweet">
+    </cj-form>
+
+  </div>
+
+  <div class="recent-tweets">
+    <h2>History of Tweets</h2>
+  </div>
+
+  <div class="tweet-list" ng-controller="IndexTweetsController">
+    <div class="tweet" ng-repeat="tweet in tweets | orderBy: '-created_at'">
+      <div class="tweet-name col-md-5 col-xs-5" ng-bind="tweet.name"></div>
+      <div class="tweet-date col-md-offset-1 col-xs-offset-1 col-md-5 col-xs-5" ng-bind="tweet.created_at | date:'dd/MM/yyyy - hh:mm a'"></div>
+      <div class="tweet-delete col-md-1 col-xs-1">
+        <a class="tweet-delete-button" ng-click="delete(tweet)">
+          <i class="fa fa-2x fa-trash"></i>
+        </a>
+      </div>
+      <div class="divisor">
+        -------------------------------------------------------------------------------------
+      </div>
+      <div class="tweet-body col-md-12">
+        <div ng-bind="tweet.description"></div>
+      </div>
+    </div>
+  </div>
+
 </div>
