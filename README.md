@@ -1,24 +1,27 @@
-# README
+# CRUD-Tweets
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple CRUD-Tweets App for test Rails 5, AngularJS & cj-form.
 
-Things you may want to cover:
+# Easy steps to configure the repo:
 
-* Ruby version
+1) Clone the repo.
 
-* System dependencies
+# Configuration:
 
-* Configuration
+1) Run <tt>bower install</tt>.
 
-* Database creation
+2) Run <tt>rake db:setup</tt>.
 
-* Database initialization
+3) Run <tt>rails server</tt>.
 
-* How to run the test suite
+5) Enter to <tt>localhost:3000</tt> and you'll see a page.
 
-* Services (job queues, cache servers, search engines, etc.)
+# Pretty small Tutorial:
 
-* Deployment instructions
+1) Insert your name and your tweet message, then click the send button.
 
-* ...
+2) You can delete a tweet clicking the trash icon on each tweet.
+
+# EXTRA STUFF (cj-form)
+
+CJ-Form it's a simple directive used to create forms with Angular: https://github.com/codigojade/cj_form
